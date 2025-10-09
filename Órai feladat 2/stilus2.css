@@ -1,0 +1,17 @@
+table{
+    float: none;
+    float: unset;
+    clear: both;
+background-color: white;
+}
+table,td{
+    border: black 3px solid;
+    border-collapse:collapse;
+}
+
+#mosoly{
+    background-image: url('kepek/smiley2.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

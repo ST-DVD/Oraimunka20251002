@@ -1,0 +1,15 @@
+body{
+    background: green;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+p{
+    color: black;
+}
+#ananasz{
+    float: left;
+    width: 30%;
+    height: auto;
+}
