@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Somogyi-Tóth Dávid">
+    <link rel="stylesheet" href="Ismeretejesztő más tantárgyakról.css">
+    <title>Ismeretejesztő más tantárgyakról</title>
+</head>
+<body>
+<main>
+    <nav>
+        <div class="menu">
+            <a href="Kezdőoldal.html">Kezdőoldal</a>
+            <a href="Hobbiaim.html">Hobbiaim</a>
+            <a href="Munkáim.html">Munkáim</a>
+            <a href="Ismeretejesztő más tantárgyakról.html">Ismeretejesztő más tantárgyakról</a>
+        </div>
+    </nav>
+
+    <article>
+        <h1>Hálózat ismeretek ipv4 es világában szeretném neked megmutatni hogy miket is rejt</h1>
+        <p>Látható egy exel táblázat ebben felvan sorolva 128 - 1 ig az értékek felette egy remek praktika látható hogy ha nem megy a mask számítás vagy nem érted akkor annyit kell tudnod hogy  a 192.168.0. a 24 mask szám és utána egészen 1 ig 32 es maskot kaphatunk. 
+            Azt követőleg a maga számítás érkezik ami pofon egyszerű a host nál levezetett számítást kell végig csinálni majd azt követőleg meg kapjuk hogy az 1 es től 7 kell lépnünk és onnantól kezdve megkapjuk hogy mi az Ip utolsó értéke megtévesztő lehet a felhasználónak aki nézi miért is nem 128 hát ott a piros azért is nem a 128 mivel az első sornak az értéke mindig nulla és a első érték amit a 128 megkaptunk azt a következőnek a Ip-vége lesz és ez ugyan ugy meg végig annyival kiegészülve hogy a 2 sorban kapott például 64 et hozzá adjuk a 128 hoz azért is mivel az adott sorban meg kaott érték legyen az 64 azt mindig a következőnél kell hozzá adni nem a saját sorában. 
+            Azt követő táblázatban egyszerű számítást láthatunk amely megkapjunk a 0 elemet a hálózat cimet amelynél az első Ip mindig a azt követő utána láthatjuk a Utolsó meg szórás illetve subnet maskot nem kell ilyenkor megijedni mivel megnézzük a követköző nulladik Ip - t aminek az értékéből leveszünk 3 mat és igy meg kapjuk az utolsótól egészen a szórási cimig az Ip vég értékeket meg is kapjuk de jön a következő kérdés és a subnet maskot hogyan is kapjuk meg egész egyszerűen megnézzük az első táblában látható maskokat maiket odairtunkk és ahhol a piros rész végetér onnatol kezdve ha egy van akkor 128 lesz a vége ha 2 db piros érték van akkor 192 stb stb.Remélem sikerült megérteni ha nem akkor az alábbi linken további információkat tudd szeretni!</p>
+        <div class="kep1">
+            <img src="exel tablazat.png" class="kep1" alt="mintakep1">
+        </div>
+    </article>
+
+    <aside>
+        <h2>Az oldal megnyitása után kellemes zene!</h2>
+        <p>Ezen a képen egy topologia ábrát láthat amely egy hálózat felépítését ábrázolja.</p>
+        <div class="kep2">
+            <img src="topologia.jpg" alt="kep2">
+        </div>
+
+        <div class="informacio">
+            <a href="https://itexamanswers.net/" class="informacio">További információ</a>
+        </div>
+    </aside>
+</main>
+</body>
+</html>

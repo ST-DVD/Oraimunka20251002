@@ -1,0 +1,158 @@
+html, body {
+    box-sizing: border-box;
+    background-image: url(kepek/v3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* -------- MAIN GRID -------- */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "he he"
+        "na na"
+        "art asi"
+        "fo fo";
+    gap: 0; /* eltüntetjük a réseket */
+    justify-items: center; /* vízszintes középre */
+    align-items: center;   /* függőleges középre */
+}
+
+/* -------- HEADER -------- */
+header {
+    grid-area: he;
+    background-color: rgb(27, 49, 109);
+    width: 60%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------- NAV -------- */
+nav {
+    grid-area: na;
+    background-color: rgb(219, 205, 188);
+    width: 60%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    color: rgb(27, 49, 109);
+    font-weight: bold;
+}
+
+/* -------- SECTION GRID -------- */
+section {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* article + aside */
+    gap: 0; /* eltüntetjük a réseket */
+    width: 1152px; /* 1920px * 0.6 = 1152px */
+    max-width: 60%; /* opcionális: rugalmas képernyőkhöz */
+    background-color: rgb(189, 182, 173); /* háttér középen */
+    justify-items: center; /* vízszintesen középre a gridben */
+    align-items: center;   /* függőlegesen középre a gridben */
+    justify-content: center; /* grid tartalom középre */
+    margin: 0 auto; /* section középre a képernyőn */
+    padding: 20px;
+}
+/* ARTICLE (képek) */
+#ball {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0; /* eltüntetjük a réseket */
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+#ball div {
+    width: 100%; 
+    height: 120px;
+    border: 3px solid rgb(27, 49, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ball img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* igazítás a kerethez */
+}
+
+/* ASIDE */
+#jobb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* függőleges középre */
+    align-items: center;     /* vízszintesen középre */
+    width: 100%;
+}
+
+#jobb h1 {
+    color: rgb(27, 49, 109);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+#jobb p {
+    color: rgb(27, 49, 109);
+    font-size: 12px;
+    text-align: center;
+}
+
+/* TABLE STÍLUSOK */
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table tr, .table th, .table td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+.sor1 { background-color: rgb(27, 49, 109); color: white; font-weight: bold; }
+.sor2 { background-color: rgb(189, 182, 173); }
+.sor3 { background-color: rgb(240, 222, 200); }
+.sor4 { background-color: rgb(189, 182, 173); }
+.sor5 { background-color: rgb(240, 222, 200); }
+
+/* FOOTER */
+footer {
+    grid-area: fo;
+    background-color: rgb(27, 49, 109);
+    width: 60%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: rgb(189, 182, 173);
+}

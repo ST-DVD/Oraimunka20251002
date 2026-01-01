@@ -1,0 +1,170 @@
+html, body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-image: url(kepek/barcelona.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0; /* alapértelmezett body margin eltávolítása */
+}
+
+/* ===== GRID KONTAINER ===== */
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+        "he he"
+        "na na"
+        "asi art";
+    gap: 0 0; /* alap gap: vízszintileg és sorok között 0 */
+    padding: 0;
+}
+
+/* ===== HEADER ===== */
+header {
+    grid-area: he;
+    background-color: rgb(37, 143, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+header h1 {
+    color: bisque;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== NAV ===== */
+nav {
+    grid-area: na;
+    background-color: rgb(16, 138, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* header és nav közti rést megszünteti */
+    padding: 0;
+    gap: 400px;
+}
+
+nav div {
+    color: white;
+    font-size: 10px;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+
+/* ===== ASIDE (BAL) ===== */
+aside.bal {
+    grid-area: asi;
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    width: 85px;
+    max-width: 100px;
+    height: 350px;
+    border-radius: 8%;
+    padding: 10px;
+    margin-top: 10px; /* nav és aside közti távolság */
+}
+
+/* ===== ARTICLE (JOBB) ===== */
+article.jobb {
+    grid-area: art;
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    width: 1050px;
+    max-width: 1300px;
+    height: 650px;
+    border-radius: 5%;
+    padding: 10px;
+    margin-top: 10px; /* nav és article közti távolság */
+}
+
+/* ===== SZÖVEGEK ===== */
+.Cím h2 {
+    font-size: 15px;
+    color: black;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.Informaciok p,
+.Szoveg_doboz p {
+    margin: 5px 0;
+    padding: 0;
+}
+
+/* ===== KÉP ===== */
+.Barca_kep {
+    width: 1000px;
+    height: 300px;
+    max-width: 1300px;
+    border-radius: 10%;
+    display: block;
+    margin: 5px 0;
+}
+
+/* ===== SZÖVEG DOBOZ ===== */
+.Szoveg_doboz {
+    background-color: gray;
+    color: rgb(37, 143, 55);
+    font-size: 10px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 10%;
+}
+
+/* ===== ISMERTETÉS ===== */
+.ismertetes {
+    color: black;
+    text-align: center;
+    margin: 10px 0;
+    padding: 0 5px;
+}
+
+/* ===== REPÜLŐ ÉS BUSZ KÉPEK ===== */
+.repulo img {
+    width: 75px;
+    height: 55px;
+    display: block;
+    margin: 5px 0;
+}
+
+.busz img {
+    width: 75px;
+    height: 55px;
+    display: block;
+    margin: 5px 0;
+}
+
+/* ===== CÉGÜNK ===== */
+.Cegunk {
+    background-color: rgb(184, 178, 178);
+    color: rgb(37, 143, 55);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10%;
+    margin: 5px 0;
+}
+
+/* ===== ISMERETTERJESZTŐ ===== */
+.Ismeretterjeszto {
+    color: black;
+    font-size: 8px;
+    text-align: center;
+    margin: 5px 0;
+}

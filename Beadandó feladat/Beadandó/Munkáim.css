@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url("kepek/gp-abu-dhabi-formula-1-3231244.webp");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "section"
+        "footer";
+    gap: 20px;
+    padding: 20px;
+}
+
+nav {
+    grid-area: nav;
+    display: grid;
+    justify-items: center;
+    margin-top: 10px;
+}
+
+.menu {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.menu a:hover {
+    background-color: rgba(224, 11, 11, 0.4);
+}
+
+section {
+    grid-area: section;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+article, aside {
+    display: grid;
+    gap: 10px;
+    padding: 15px;
+    border: 2px solid black;
+    background-color: rgba(0,0,0,0.35);
+}
+
+article h1, aside h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+article p, aside p {
+    font-size: 14px;
+    margin: 0;
+}
+
+article a, .informacio a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+article a:hover, .informacio a:hover {
+    background-color: rgba(224, 11, 11, 0.4);
+}
+
+.informacio {
+    display: grid;
+    justify-items: center;
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    justify-items: center;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    padding: 12px 0;
+    width: 100%;
+    max-width: 900px;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    margin: 5px auto;
+}
+
+footer a:hover {
+    background-color: rgba(224,11,11,0.4);
+}
+
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        grid-auto-flow: row;
+        gap: 10px;
+    }
+}
